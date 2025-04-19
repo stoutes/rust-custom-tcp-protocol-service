@@ -1,0 +1,10 @@
+[package]
+name = "collector"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sysinfo = { version = "0.34.2", features = ["apple-app-store"] }
+shared_code = { path = "../shared_code" }
+thiserror = "2.0.12"
+uuid = { version = "1.16.0", features = ["v4"] }
