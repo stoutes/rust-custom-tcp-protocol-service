@@ -10,3 +10,6 @@ Bytes | Name | Description
 8-11 | **Payload size** | a 32-bit unsigned integer to represent the size of the payload.
 12+ | **Payload** | JSON payload.
 End-4 - End | **CRC32** | a CRC32 checksum to ensure that the data we received is the data we expected. Using the `crc32fast` crate to provide this functionality.
+
+
+Just open two terminals and do `cargo run` in collector and server to see the action!
