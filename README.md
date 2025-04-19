@@ -12,4 +12,4 @@ Bytes | Name | Description
 End-4 - End | **CRC32** | a CRC32 checksum to ensure that the data we received is the data we expected. Using the `crc32fast` crate to provide this functionality.
 
 
-Just open two terminals and do `cargo run` in collector and server to see the action!
+Just open two terminals in collector and server and do `cargo run` in each to see the action!
