@@ -1,0 +1,10 @@
+C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\collector\target\debug\deps\libwindows_result-8ff16739c43f8372.rmeta: C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\lib.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\bindings.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\com.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\strings.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\error.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\hresult.rs
+
+C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\collector\target\debug\deps\windows_result-8ff16739c43f8372.d: C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\lib.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\bindings.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\com.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\strings.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\error.rs C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\hresult.rs
+
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\lib.rs:
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\bindings.rs:
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\com.rs:
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\strings.rs:
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\error.rs:
+C:\Users\stout\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-result-0.1.2\src\hresult.rs:
