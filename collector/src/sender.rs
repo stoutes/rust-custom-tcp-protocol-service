@@ -1,39 +1,29 @@
 // Sending data
 
 use std::collections::VecDeque;
-use thiserror::Error;
+use crate::errors::CollectorError;
 use std::io::{Read, Write};
 use std::net::TcpStream;
 use shared_code::{decode_response_v1, CollectorCommandV1, CollectorResponseV1, DATA_COLLECTOR_ADDRESS};
 
-#[derive(Debug, Error)]
-pub enum CollectionError {
-    #[error("Unable to connect to the server")]
-    UnableToConnect,
-    #[error("Sending data failed")]
-    UnableToSendData,
-    #[error("Receiving data failed")]
-    UnableToReceiveData
 
-}
-
-pub fn send_command(command: &CollectorCommandV1) -> Result<(), CollectionError> {
+pub fn send_command(command: &CollectorCommandV1) -> Result<(), CollectorError> {
     let bytes = shared_code::encode_v1(&command);
     println!("Encoded {} bytes", bytes.len());
     let mut stream = std::net::TcpStream::connect(DATA_COLLECTOR_ADDRESS)
-        .map_err(|_| CollectionError::UnableToConnect)?;
+        .map_err(|_| CollectorError::UnableToConnect)?;
     stream.write_all(&bytes)
-        .map_err(|_| CollectionError::UnableToSendData)?;;
+        .map_err(|_| CollectorError::UnableToSendData)?;;
 
     Ok(())
 }
 pub fn send_queue(
     queue: &mut VecDeque<Vec<u8>>,
     collector_id: u128
-) -> Result<(), CollectionError> {
+) -> Result<(), CollectorError> {
     // Connect
     let mut stream = TcpStream::connect(DATA_COLLECTOR_ADDRESS)
-        .map_err(|_| CollectionError::UnableToConnect)?;
+        .map_err(|_| CollectorError::UnableToConnect)?;
     let mut buf = [0u8; 512];
 
     // Try sending each queued command, but only pop on a real Ack
@@ -42,14 +32,14 @@ pub fn send_queue(
         // send (peek at &Vec<u8>)
         
         if stream.write_all(command).is_err() {
-            return Err(CollectionError::UnableToSendData);
+            return Err(CollectorError::UnableToSendData);
         }
         println!("sent command, about to read bytes");
         // read response
         let bytes_read = stream.read(&mut buf)
-            .map_err(|_| CollectionError::UnableToReceiveData)?;
+            .map_err(|_| CollectorError::UnableToReceiveData)?;
         if bytes_read == 0 {
-            return Err(CollectionError::UnableToReceiveData);
+            return Err(CollectorError::UnableToReceiveData);
         }
         println!("bytes read: {}", bytes_read);
         // decode
@@ -66,9 +56,5 @@ pub fn send_queue(
             break;
         }
     }
-
-    // Now send your RequestWork as before…
-    // …
-
     Ok(())
 }

@@ -2,7 +2,7 @@ use std::collections::VecDeque;
 use shared_code::CollectorCommandV1;
 mod data_collector;
 mod sender;
-
+mod errors;
 
 fn get_uuid() -> u128 {
     let path = std::path::Path::new("uuid");

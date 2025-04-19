@@ -1,0 +1,1 @@
+C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\shared_code\target\debug\libshared_code.rlib: C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\shared_code\src\lib.rs
