@@ -7,3 +7,10 @@ edition = "2024"
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
 crc32fast = "1.4.2"
+
+[profile.release]
+opt-level = "z"
+strip = true # Automatically strip symbols
+lto = true
+codegen-units = 1
+panic = "abort"

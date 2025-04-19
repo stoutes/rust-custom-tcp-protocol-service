@@ -1,0 +1,1 @@
+C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\target\x86_64-pc-windows-msvc\release\rust-web-service.exe: C:\Users\stout\OneDrive\Documents\ardan_labs_rust_projects\rust-workspace\rust-web-service\src\main.rs

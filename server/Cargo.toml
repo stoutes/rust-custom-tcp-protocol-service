@@ -8,7 +8,7 @@ anyhow = "1.0.98"
 dotenv = "0.15.0"
 shared_code = { path = "../shared_code" }
 sqlx = { version= "0.8.5", default-features = false,  features = [
-    "all-databases",            # postgres, mysql, sqlite
+    "sqlite",            # postgres, mysql, sqlite
     "runtime-tokio-native-tls", # or your runtime/TLS of choice
     "macros",                   # compile‑time checked queries
     "migrate",                  # migrations API, if you need it
