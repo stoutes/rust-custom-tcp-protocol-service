@@ -13,3 +13,11 @@ End-4 - End | **CRC32** | a CRC32 checksum to ensure that the data we received i
 
 
 Just open two terminals in collector and server and do `cargo run` in each to see the action!
+
+If you want to see the dashboard just hit `localhost:3000` in your browser.
+
+There's also some REST endpoints you can hit:
+`api/all` - shows all data from the database
+`api/collectors` - shows all collectors in the pool
+`api/collector/{uuid}` - shows specific collector data based on provided uuid
+`api/collector/{uuid}/shutdown` - SHUT IT DOWN!
